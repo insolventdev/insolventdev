@@ -1,0 +1,14 @@
+names_array = [ "Andrei", "Alexander", "Artyom", "Vasya", "Andreya", "Alexandra", "Artyoma", "Vas'kina" ]
+
+for i in range( 4, len( names_array ) ):
+    print( names_array[ i ] )
+
+#endregion of first task
+
+numbers_array = [ i for i in range( 1, 1000 ) if len(
+    str( i )
+) % 2 != 0 ]
+
+print( numbers_array )
+
+#endregion of second task
