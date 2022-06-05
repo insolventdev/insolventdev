@@ -1,0 +1,80 @@
+from pyclbr import Function
+from typing import Union, List
+
+def get_void( ):
+    a = 0
+
+def multiply_by_two( aboba: Union[ int, float ] ) -> Union[ int, float ]:
+    return aboba * 2
+
+def is_even( aboba: Union[ int, float ] ) -> bool:
+    if ( aboba % 2 == 0 ):
+        print( "Yes" )
+
+        return True
+    else:
+        print( "No" )
+
+        return False
+
+def is_first_more( aboba: Union[ int, float ], bebra: Union[ int, float ] ) -> bool:
+    if ( aboba > bebra ):
+        print( "Yes" )
+
+        return True
+    else:
+        print( "No" )
+
+        return False
+
+
+def_lambda = lambda x, y: x % y
+
+def decorator( ofunction: Function ) -> Function:
+    def rfunction( *args ):
+        print( "ABOBA BEBRA LOLOLOLO" )
+
+        ofunction(
+            list(
+                map( multiply_by_two, args )
+            )
+        )
+
+        print( "DADAHDhadwads lOL lmao nigger" )
+
+    return rfunction
+
+
+@decorator
+def sniff_bebra( *args ):
+    print( *args )
+
+
+sniff_bebra( 1, "dad" ) # хаахах вот это бееебра
+
+
+def find_max_min( array: List[ Union[ int, float ] ] ):
+    min = array[ 0 ]
+    max = array[ 0 ]
+
+    for i in range( 0, len( array ) ):
+        v = array[ i ]
+
+        if v < min:
+            min = v
+
+        if v > max:
+            max = v
+
+    print( min, max )
+
+
+#Я хочу спат bb
+
+def is_visokosn( god ):
+    if god % 4 == 0:
+        print("da")
+    else:
+        print("net")
+
+#mne lenb dalshe sori
